@@ -1,0 +1,1004 @@
+/*! challenge-insure-landing-page-master v0.0.1 | (c) 2020 Nicole | MIT License | https://github.com/nicoleortizga/ */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap");
+/* line 11, node_modules/normalize.css/normalize.css */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 23, node_modules/normalize.css/normalize.css */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+/* line 31, node_modules/normalize.css/normalize.css */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 40, node_modules/normalize.css/normalize.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 53, node_modules/normalize.css/normalize.css */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 64, node_modules/normalize.css/normalize.css */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 76, node_modules/normalize.css/normalize.css */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 85, node_modules/normalize.css/normalize.css */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 95, node_modules/normalize.css/normalize.css */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 105, node_modules/normalize.css/normalize.css */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 116, node_modules/normalize.css/normalize.css */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 125, node_modules/normalize.css/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 133, node_modules/normalize.css/normalize.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 137, node_modules/normalize.css/normalize.css */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 148, node_modules/normalize.css/normalize.css */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 160, node_modules/normalize.css/normalize.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 176, node_modules/normalize.css/normalize.css */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 186, node_modules/normalize.css/normalize.css */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 195, node_modules/normalize.css/normalize.css */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 206, node_modules/normalize.css/normalize.css */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 218, node_modules/normalize.css/normalize.css */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 229, node_modules/normalize.css/normalize.css */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 240, node_modules/normalize.css/normalize.css */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 253, node_modules/normalize.css/normalize.css */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 261, node_modules/normalize.css/normalize.css */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 270, node_modules/normalize.css/normalize.css */
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 280, node_modules/normalize.css/normalize.css */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 290, node_modules/normalize.css/normalize.css */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 299, node_modules/normalize.css/normalize.css */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 308, node_modules/normalize.css/normalize.css */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 320, node_modules/normalize.css/normalize.css */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 328, node_modules/normalize.css/normalize.css */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 339, node_modules/normalize.css/normalize.css */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 347, node_modules/normalize.css/normalize.css */
+[hidden] {
+  display: none;
+}
+
+/* line 1, src/sass/abstracts/_variables.scss */
+:root {
+  --color-primary-violet: hsl(256, 26%, 20%);
+  --color-primary-blue: hsl(216, 30%, 68%);
+  --color-dark-violet: hsl(270, 9%, 17%);
+  --color-light-violet: hsl(273, 4%, 51%);
+  --color-light-gray: hsl(0, 0%, 98%);
+  --color-white: #fff;
+  --horizontal-line-gray: #dadada;
+  --horizontal-line-pink: #C396C6;
+}
+
+/* line 1, src/sass/components/_base.scss */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 5, src/sass/components/_base.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* line 11, src/sass/components/_base.scss */
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: var(--color-white);
+}
+
+/* line 17, src/sass/components/_base.scss */
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "DM Serif Display", serif;
+}
+
+/* line 24, src/sass/components/_base.scss */
+a {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-light-gray);
+  text-transform: uppercase;
+}
+
+/* line 33, src/sass/components/_base.scss */
+p {
+  margin: 0;
+  line-height: calc(26 / 16);
+}
+
+/* line 38, src/sass/components/_base.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 44, src/sass/components/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 48, src/sass/components/_base.scss */
+.module {
+  padding: 0 24px;
+  text-align: center;
+}
+
+@media all and (min-width: 800px) {
+  /* line 48, src/sass/components/_base.scss */
+  .module {
+    padding: 0 130px;
+    text-align: left;
+  }
+}
+
+/* line 58, src/sass/components/_base.scss */
+.button {
+  padding: 13px 27.5px;
+  background-color: inherit;
+  border: 1px solid var(--color-light-gray);
+  width: 170px;
+  text-align: center;
+}
+
+/* line 65, src/sass/components/_base.scss */
+.button:hover {
+  background-color: var(--color-light-gray);
+  color: var(--color-primary-violet);
+}
+
+/* line 71, src/sass/components/_base.scss */
+.button-nav {
+  max-width: 327px;
+  width: 100%;
+}
+
+/* line 76, src/sass/components/_base.scss */
+.heading {
+  font-size: 48px;
+}
+
+/* line 79, src/sass/components/_base.scss */
+.heading__light {
+  color: var(--color-light-gray);
+}
+
+/* line 83, src/sass/components/_base.scss */
+.heading__dark {
+  color: var(--color-primary-violet);
+}
+
+/* line 88, src/sass/components/_base.scss */
+.container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+/* line 93, src/sass/components/_base.scss */
+header {
+  max-height: 80px;
+  position: relative;
+  z-index: 21;
+  background-color: var(--color-white);
+}
+
+/* line 99, src/sass/components/_base.scss */
+header .cmp-nav {
+  padding: 24px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 106, src/sass/components/_base.scss */
+header .cmp-nav .cmp-nav-list {
+  padding-top: 24px;
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-dark-violet);
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  background-image: url("../images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  height: 100vh;
+}
+
+/* line 122, src/sass/components/_base.scss */
+header .cmp-nav .cmp-nav-list li {
+  margin: 24px;
+}
+
+/* line 126, src/sass/components/_base.scss */
+header .cmp-nav .cmp-nav-list a {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.36px;
+}
+
+/* line 132, src/sass/components/_base.scss */
+header .cmp-nav .cmp-nav-list.list-expand {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+@media all and (min-width: 700px) {
+  /* line 138, src/sass/components/_base.scss */
+  header .cmp-nav .cmp-nav-list {
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    height: auto;
+    background-color: var(--color-white);
+    background-image: none;
+  }
+  /* line 148, src/sass/components/_base.scss */
+  header .cmp-nav .cmp-nav-list li {
+    margin: 0;
+    padding-right: 24px;
+  }
+  /* line 153, src/sass/components/_base.scss */
+  header .cmp-nav .cmp-nav-list a {
+    color: var(--color-light-violet);
+    font-size: 13px;
+  }
+  /* line 158, src/sass/components/_base.scss */
+  header .cmp-nav .cmp-nav-list li:not(:last-child) a:hover {
+    color: var(--color-primary-violet);
+  }
+  /* line 163, src/sass/components/_base.scss */
+  header .cmp-nav .cmp-nav-toggle {
+    display: none;
+  }
+  /* line 167, src/sass/components/_base.scss */
+  header .cmp-nav .button-nav {
+    border: 2px solid var(--color-primary-violet);
+  }
+  /* line 171, src/sass/components/_base.scss */
+  header .cmp-nav .button-nav:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary-violet);
+  }
+}
+
+/* line 178, src/sass/components/_base.scss */
+header .cmp-nav-toggle {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  cursor: pointer;
+  background-image: url("/images/icon-hamburger.svg");
+}
+
+/* line 185, src/sass/components/_base.scss */
+header .cmp-nav-toggle.active {
+  background-image: url("/images/icon-close.svg");
+}
+
+@media all and (max-width: 699px) {
+  /* line 192, src/sass/components/_base.scss */
+  .scroll-hidden {
+    overflow: hidden;
+  }
+}
+
+/* line 197, src/sass/components/_base.scss */
+.cmp-site-hero {
+  padding-bottom: 93px;
+  background: var(--color-primary-violet);
+}
+
+/* line 201, src/sass/components/_base.scss */
+.cmp-site-hero .cmp-site-hero-image img {
+  width: 100%;
+}
+
+/* line 205, src/sass/components/_base.scss */
+.cmp-site-hero-content {
+  padding-top: 93px;
+  color: var(--color-light-gray);
+}
+
+@media all and (max-width: 963px) {
+  /* line 205, src/sass/components/_base.scss */
+  .cmp-site-hero-content {
+    position: relative;
+  }
+  /* line 212, src/sass/components/_base.scss */
+  .cmp-site-hero-content h2 {
+    position: relative;
+    z-index: 23;
+  }
+}
+
+/* line 218, src/sass/components/_base.scss */
+.cmp-site-hero-content h2 {
+  font-size: 48px;
+}
+
+/* line 222, src/sass/components/_base.scss */
+.cmp-site-hero-content p {
+  padding: 16px 0;
+}
+
+@media all and (min-width: 964px) {
+  /* line 197, src/sass/components/_base.scss */
+  .cmp-site-hero {
+    height: 600px;
+  }
+  /* line 230, src/sass/components/_base.scss */
+  .cmp-site-hero .hero-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 235, src/sass/components/_base.scss */
+  .cmp-site-hero .cmp-site-hero-image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  /* line 238, src/sass/components/_base.scss */
+  .cmp-site-hero .cmp-site-hero-image img {
+    max-width: 540px;
+    width: 100%;
+    height: 650px;
+  }
+  /* line 245, src/sass/components/_base.scss */
+  .cmp-site-hero-content {
+    padding: 0 22px;
+    width: 50%;
+  }
+  /* line 249, src/sass/components/_base.scss */
+  .cmp-site-hero-content h2 {
+    font-size: 52px;
+  }
+  /* line 253, src/sass/components/_base.scss */
+  .cmp-site-hero-content::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    max-width: 150px;
+    background: var(--horizontal-line-gray);
+    margin: 63px 0;
+  }
+}
+
+/* line 260, src/sass/components/_base.scss */
+.cmp-intro-bg-pattern {
+  position: absolute;
+}
+
+/* line 265, src/sass/components/_base.scss */
+.bg-pattern-left {
+  top: -4px;
+  left: 0;
+  z-index: 20;
+}
+
+/* line 271, src/sass/components/_base.scss */
+.bg-pattern-right {
+  right: 0;
+}
+
+@media all and (min-width: 964px) {
+  /* line 276, src/sass/components/_base.scss */
+  .bg-pattern-left {
+    top: 515px;
+    left: 0;
+  }
+  /* line 281, src/sass/components/_base.scss */
+  .bg-pattern-right {
+    top: 0;
+    right: 0;
+  }
+}
+
+/* line 288, src/sass/components/_base.scss */
+.cmp-features {
+  margin-top: 305px;
+}
+
+/* line 291, src/sass/components/_base.scss */
+.cmp-features h2 {
+  padding-top: 40px;
+  font-size: 48px;
+}
+
+/* line 296, src/sass/components/_base.scss */
+.cmp-features-columns {
+  margin-top: 80px;
+}
+
+/* line 300, src/sass/components/_base.scss */
+.cmp-features-col {
+  margin: 56px auto;
+  max-width: 350px;
+}
+
+/* line 304, src/sass/components/_base.scss */
+.cmp-features-col h3 {
+  margin-top: 32px;
+  color: var(--color-dark-violet);
+}
+
+/* line 309, src/sass/components/_base.scss */
+.cmp-features-col p {
+  margin-top: 16px;
+  color: var(--color-light-violet);
+}
+
+/* line 315, src/sass/components/_base.scss */
+.cmp-features::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  max-width: 150px;
+  background: var(--horizontal-line-pink);
+  margin: 0 auto;
+}
+
+@media all and (min-width: 800px) {
+  /* line 320, src/sass/components/_base.scss */
+  .cmp-features-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* line 325, src/sass/components/_base.scss */
+  .cmp-features-col {
+    margin: 0;
+    padding-right: 27px;
+  }
+  /* line 330, src/sass/components/_base.scss */
+  .cmp-features::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    max-width: 150px;
+    background: var(--horizontal-line-pink);
+    margin: 0;
+  }
+}
+
+/* line 336, src/sass/components/_base.scss */
+.cmp-work-block {
+  margin-top: 140px;
+  padding: 72px 15px;
+  background-color: var(--color-primary-violet);
+  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+/* line 343, src/sass/components/_base.scss */
+.cmp-work-block h2 {
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+/* line 348, src/sass/components/_base.scss */
+.cmp-work-block a {
+  margin-top: 40px;
+}
+
+@media all and (min-width: 1418px) {
+  /* line 336, src/sass/components/_base.scss */
+  .cmp-work-block {
+    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
+@media all and (min-width: 700px) {
+  /* line 336, src/sass/components/_base.scss */
+  .cmp-work-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* line 362, src/sass/components/_base.scss */
+  .cmp-work-block h2,
+  .cmp-work-block a {
+    margin: 0;
+  }
+  /* line 367, src/sass/components/_base.scss */
+  .cmp-work-block h2 {
+    width: 45%;
+  }
+  /* line 371, src/sass/components/_base.scss */
+  .cmp-work-block .button {
+    background-color: transparent;
+  }
+  /* line 374, src/sass/components/_base.scss */
+  .cmp-work-block .button:hover {
+    background-color: var(--color-white);
+  }
+}
+
+/* line 381, src/sass/components/_base.scss */
+.cmp-footer {
+  margin-top: 140px;
+  padding: 67px 0;
+  background-color: var(--color-light-gray);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/* line 390, src/sass/components/_base.scss */
+.cmp-footer .cmp-social {
+  max-width: 150px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/* line 395, src/sass/components/_base.scss */
+.cmp-footer .cmp-social-list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 403, src/sass/components/_base.scss */
+.cmp-footer .cmp-footer-list::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  max-width: 1110px;
+  background: var(--horizontal-line-gray);
+  margin: 40px 0 0;
+}
+
+/* line 407, src/sass/components/_base.scss */
+.cmp-footer .cmp-footer-col a:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+/* line 411, src/sass/components/_base.scss */
+.cmp-footer h4 {
+  color: var(--color-light-violet);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 40px 0;
+}
+
+/* line 418, src/sass/components/_base.scss */
+.cmp-footer a {
+  color: var(--color-dark-violet);
+  display: block;
+}
+
+/* line 422, src/sass/components/_base.scss */
+.cmp-footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 427, src/sass/components/_base.scss */
+.cmp-footer img:hover {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+@media all and (min-width: 384px) {
+  /* line 381, src/sass/components/_base.scss */
+  .cmp-footer {
+    background-image: url("../images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media all and (min-width: 650px) {
+  /* line 437, src/sass/components/_base.scss */
+  .cmp-footer .cmp-footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /* line 442, src/sass/components/_base.scss */
+  .cmp-footer .logo {
+    padding: 32px 0;
+  }
+  /* line 446, src/sass/components/_base.scss */
+  .cmp-footer .cmp-social {
+    margin: 0;
+  }
+  /* line 450, src/sass/components/_base.scss */
+  .cmp-footer .cmp-social-link {
+    padding-left: 16px;
+  }
+  /* line 454, src/sass/components/_base.scss */
+  .cmp-footer .cmp-footer-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* line 457, src/sass/components/_base.scss */
+  .cmp-footer .cmp-footer-columns .cmp-footer-col {
+    width: 30%;
+  }
+  /* line 462, src/sass/components/_base.scss */
+  .cmp-footer .cmp-footer-list::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    max-width: 1110px;
+    background: var(--horizontal-line-gray);
+    margin: 0;
+  }
+}

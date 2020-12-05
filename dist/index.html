@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Frontend Mentor | Insure landing page</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="cmp-site-header">
+      <nav class="cmp-nav">
+        <a href="#" class="logo"><img src="./images/logo.svg" alt="Logo" /></a>
+        <div class="cmp-nav-toggle"></div>
+        <ul class="cmp-nav-list">
+          <li><a href="#">How we work</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#" class="button button-nav">View plans</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="cmp-site-hero">
+        <div class="hero-wrap">
+          <div class="cmp-site-hero-image">
+            <picture>
+              <source media="(max-width: 375px)" srcset="./images/image-intro-mobile.jpg" />
+              <source media="(min-width: 1393px)" srcset="./images/image-intro-desktop.jpg" />
+              <img src="./images/image-intro-desktop.jpg" alt="Introduction Image" />
+            </picture>
+          </div>
+
+          <div class="module cmp-site-hero-content">
+            <h2 class="heading heading__light">Humanizing your insurance.</h2>
+            <p>
+              Get your life insurance coverage easier and faster. We blend our
+              expertise and technology to help you find the plan that’s right
+              for you. Ensure you and your loved ones are protected.
+            </p>
+            <a href="#" class="button">View plans</a>
+            <picture class="cmp-intro-bg-pattern bg-pattern-left">
+              <source media="(max-width: 963px)" srcset="./images/bg-pattern-intro-left-mobile.svg" />
+              <source media="(min-width: 964px)" srcset="./images/bg-pattern-intro-left-desktop.svg" />
+              <img src="./images/bg-pattern-intro-left-desktop.svg" alt="Pattern Image" />
+            </picture>
+
+            <picture class="cmp-intro-bg-pattern bg-pattern-right">
+              <source media="(max-width: 963px)" srcset="./images/bg-pattern-intro-right-mobile.svg" />
+              <source media="(min-width: 964px)" srcset="./images/bg-pattern-intro-right-desktop.svg" />
+              <img src="./images/bg-pattern-intro-right-desktop.svg" alt="Pattern Image" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="module cmp-features">
+        <h2 class="heading heading__dark">We’re different</h2>
+        <div class="cmp-features-columns">
+          <div class="cmp-features-col">
+            <img src="./images/icon-snappy-process.svg" alt="Snappy Process" />
+            <h3>Snappy Process</h3>
+            <p>
+              Our application process can be completed in minutes, not hours.
+              Don’t get stuck filling in tedious forms.
+            </p>
+          </div>
+
+          <div class="cmp-features-col">
+            <img src="./images/icon-affordable-prices.svg" alt="Affordable Prices" />
+            <h3>Affordable Prices</h3>
+            <p>
+              We don’t want you worrying about high monthly costs. Our prices
+              may be low, but we still offer the best coverage possible.
+            </p>
+          </div>
+
+          <div class="cmp-features-col">
+            <img src="./images/icon-people-first.svg" alt="People First\" />
+            <h3>People First</h3>
+            <p>
+              Our plans aren’t full of conditions and clauses to prevent
+              payouts. We make sure you’re covered when you need it.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="module">
+        <div class="cmp-work-block">
+          <h2 class="heading__light">Find out more about how we work</h2>
+          <a href="#" class="button">How we work</a>
+        </div>
+      </section>
+    </main>
+    <footer class="module cmp-footer">
+      <div class="module cmp-footer-social">
+        <a href="#" class="logo"><img src="./images/logo.svg" alt="Logo" /></a>
+        <div class="cmp-social">
+          <ul class="cmp-social-list">
+            <li>
+              <a href="#" class="cmp-social-link">
+                <img src="./images/icon-facebook.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cmp-social-link">
+                <img src="./images/icon-twitter.svg" alt="Twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cmp-social-link">
+                <img src="./images/icon-pinterest.svg" alt="Pinterest" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cmp-social-link">
+                <img src="./images/icon-instagram.svg" alt="Instagram" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="module cmp-footer-list">
+        <div class="cmp-footer-columns">
+          <div class="cmp-footer-col">
+            <h4>Our company</h4>
+            <a href="#">How we work</a>
+            <a href="#">Why Insure?</a>
+            <a href="#">View plans</a>
+            <a href="#">Reviews</a>
+          </div>
+          <div class="cmp-footer-col">
+            <h4>Help me</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookies</a>
+          </div>
+          <div class="cmp-footer-col">
+            <h4>Contact</h4>
+            <a href="#">Sales</a>
+            <a href="#">Support</a>
+            <a href="#">Live chat</a>
+          </div>
+          <div class="cmp-footer-col">
+            <h4>Others</h4>
+            <a href="#">Careers</a>
+            <a href="#">Press</a>
+            <a href="#">Licenses</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
